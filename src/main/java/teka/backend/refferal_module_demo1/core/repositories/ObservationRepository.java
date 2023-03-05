@@ -1,2 +1,7 @@
-package teka.backend.refferal_module_demo1.core.repositories;public interface ObservationRepository {
+package teka.backend.refferal_module_demo1.core.repositories;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import teka.backend.refferal_module_demo1.core.models.core.Observation;
+
+public interface ObservationRepository extends JpaRepository<Observation, Long> {
 }
